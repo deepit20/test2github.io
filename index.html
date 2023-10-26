@@ -1,0 +1,61 @@
+index (3).html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Animation Demo</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    background-image: url("https://thumbs.dreamstime.com/b/abstract-mood-series-website-background-color-images-high-resolution-abstract-mood-backgrounds-images-designed-use-websites-157859506.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+    /* background-color: rgb(213, 149, 212); */
+  }
+
+  .scrolling-text {
+    position: absolute;
+    white-space: nowrap;
+    animation: scrollAnimation 50s linear infinite;
+    color: rgb(252, 16, 16);
+    font-size: 70px;;
+  }
+  
+  @keyframes scrollAnimation {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(450%);
+    }
+  }
+
+  .blinking-text {
+    animation: blinkAnimation 1s alternate infinite;
+    font-size: 50px;;
+    color: rgb(249, 245, 11);
+  }
+
+  @keyframes blinkAnimation {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+</style>
+</head>
+<center>
+<body>
+  <div class="text">
+  <div class="scrolling-text">-----******DEEPIT NAYAK******----</div><BR><BR><BR>
+    <br>
+    <br>
+  <div class="blinking-text">*NNM22CS058*</div>
+  </div>
+</body>
+</center>
+</html>
